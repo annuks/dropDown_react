@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+
+import  * as React from 'react';
 import './App.css';
 
-function App() {
+ const App  = ()=> {
+  const [obj, setObj] =React.useState('profession')
+  const handleUpdate = (event)=>{
+    setObj(event.target.value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>
+        <div>
+        <label>
+          Let me Know Your Work Profile...
+          <select value={obj} onChange = {handleUpdate}>
+            <option value = "associate-software-developer">Associate Software Developer</option>
+            <option value = "software-developer"> Software Developer</option>
+            <option value = "software-engineer">Software Engineer</option>
+            <option value = "senior-software-engineer">Senior Software Engineer</option>
+
+          </select>
+        </label>
+        <p> Your Designation {obj} !</p>
+        </div>
+       </header>
     </div>
   );
 }
