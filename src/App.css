@@ -1,10 +1,31 @@
-.App {
-  text-align: center;
+body{
+  background-color: #fff;
+  
 }
+.App {
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  font-size:larger;
+  min-height: 200px;
+  margin: 20%;
+  margin-top: 2px;
+  background-color:rgb(131, 222, 225);
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 25px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+#list{
+  margin: 5px;
+  height: 45px;
+  background: rgb(193, 227, 135);
+  text-align: center;
+  font-size: medium;
+  border-radius: 25px;
+  font-family: system-ui;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +35,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a1abc1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
