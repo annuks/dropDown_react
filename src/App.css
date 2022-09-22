@@ -1,45 +1,10 @@
-body{
-  background-color: #fff;
-  
-}
-.App {
-  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
-  font-family: 'Cairo', sans-serif;
-  text-align: center;
-  font-size:larger;
-  min-height: 200px;
-  margin: 20%;
-  margin-top: 2px;
-  background-color:rgb(131, 222, 225);
+.DropdownCheck{
   display: flex;
-  justify-content: center;
-  border: 2px solid black;
-  border-radius: 25px;
-
-}
-#list{
-  margin: 5px;
-  height: 45px;
-  background: rgb(193, 227, 135);
-  text-align: center;
-  font-size: medium;
-  border-radius: 25px;
-  font-family: system-ui;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #a1abc1;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  text-align: center;
+  background-color: #7bd7e2;
+  margin: 10%;
+  height: 400px;
+
 }

@@ -5,10 +5,11 @@ import './App.css';
 import './Dropdown.css'
 
  function App () {
+  const list = ["One", "Two", "Three", "Four"]
   return (
-    <div>
-  <Dropdown/>
+    <div className='DropdownCheck'>
+      <Dropdown list={list} />
     </div>
-  );}
+  )};
 
 export default App;

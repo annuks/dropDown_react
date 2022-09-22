@@ -1,46 +1,38 @@
-body{
-    background-color: #fff;
-    
-  }
-  .dropdown {
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-    font-size:larger;
-    min-height: 200px;
-    margin: 20%;
-    margin-top: 2px;
-    background-color:rgb(131, 222, 225);
-    display: flex;
-    justify-content: center;
-    border: 2px solid black;
-    border-radius: 25px;
-  
-  }
-  .dropdown-menu{
-    margin: 10px;
-    height: 45px;
-    background: rgb(193, 227, 135);
-    text-align: center;
-    font-size: medium;
-    /* border-radius: 25px; */
-    font-family: system-ui;
-  
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #a1abc1;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+#dropdownButton{
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  min-width: 130px;
+  border: none;
+  align-self: center;
+  border-radius: 5px;
+  height: 30px;
+  font-size: larger;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdownItemContainer{
+  list-style-type: none;
+  background: white;
+  min-width: 150px;
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.dropdownItemContainer li {
+  text-align: center;
+  margin: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+.dropdownItemContainer li:hover {
+  background: lightgray;
+}
